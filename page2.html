@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-nav">
+            <div class="logo">LOGO</div>
+            <div class="nav-links">
+                <a href="#discovery">Discovery</a>
+                <a href="#my-jobs">My Jobs</a>
+                <a href="#creatives">Creatives</a>
+            </div>
+        </div>
+        <div class="avatar-container">
+            <div class="avatar"></div>
+            <div class="user-info">
+                <div class="user-name">MY NAME</div>
+                <div class="user-role">ROLE</div>
+            </div>
+            <div class="down-arrow"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div>Your Profile</div>
+        <div class="sub-text">
+            Complete the data below and make sure the profile data you enter is correct
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h3>Profile</h3>
+                <p><i class="fas fa-pen"></i> Step 1: Personal Info</p>
+                <p><i class="fas fa-clipboard-list"></i> Step 2: Skills and Aspirations</p>
+                <p><i class="fas fa-briefcase"></i> Step 3: Portfolio</p>
+            </div>
+        </div>
+        <div class="pri">
+            <label for="role">Primary Role</label>
+            <select name="Primary Role" id="role">
+                <option value="Select Primary Role">Select Primary Role</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+            </select>
+        </div>
+
+        <div class = "CV">
+            <div>Upload CV</div>
+            <form class="file-box" method="post" action="" enctype="multipart/form-data">
+                <div class="box__input">
+                  <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+                  <button class="box__button" type="submit">Upload</button>
+                </div>
+                <div class="box__uploading">Uploading…</div>
+                <div class="box__success">Done!</div>
+                <div class="box__error">Error! <span></span>.</div>
+              </form>
+        </div>
+        <div class="about">
+            <div>About</div>
+                <div class = "sub-about">
+                    Please share information about what will be 
+                    required from this role 
+                </div>
+        </div>
+            </div>
+            <input type="text" id="about-input" placeholder="Enter the about">
+        </div>
+
+        <div class="container">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <span class="small-text">Available for Work</span>
+        </div>
+        <hr class="separator" style="margin-top: 30px; width: 70%; color: grey; align-self: flex-end;" />
+        <div class="skills">
+            <div>Skills</div>
+            <div class="sub-skills">
+                These tags will be used to best match you with jobs and opportunities featured on The Gateway
+            </div>
+        </div>
+
+        <div class="notable">
+            <div>Notable Skills</div>
+            <div class="search-container">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search tags" name="search">
+              </div>
+        </div>
+
+        <div class="notable2">
+            <div>Aspirations </div>
+            <div class="search-container2">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search tags" name="search">
+            </div>
+        </div>
+        <hr class="separator" style="margin-top: 30px; margin-bottom: 50px; width: 70%; color: grey; align-self: flex-end;" />
+        <div class="button-container">
+            <button id="previousButton" class="nav-button">Previous</button>
+            <button id="nextButton" class="nav-button">Next</button>
+        </div>
+        <script>
+            document.getElementById('nextButton').addEventListener('click', function() {
+                window.location.href = 'index3.html';
+            });
+
+            document.getElementById('previousButton').addEventListener('click', function() {
+                window.location.href = 'Homepage.html';
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-nav">
+            <div class="logo">LOGO</div>
+            <div class="nav-links">
+                <a href="#discovery">Discovery</a>
+                <a href="#my-jobs">My Jobs</a>
+                <a href="#creatives">Creatives</a>
+            </div>
+        </div>
+        <div class="avatar-container">
+            <div class="avatar"></div>
+            <div class="user-info">
+                <div class="user-name">MY NAME</div>
+                <div class="user-role">ROLE</div>
+            </div>
+            <div class="down-arrow"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div>Edit Your Profile</div>
+        <div class="sub-text">
+            Complete the data below and make sure the profile data you enter is correct
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h3>Profile</h3>
+                <p><i class="fas fa-pen"></i> Step 1: Personal Info</p>
+                <p><i class="fas fa-clipboard-list"></i> Step 2: Skills and Aspirations</p>
+                <p><i class="fas fa-briefcase"></i> Step 3: Portfolio</p>
+            </div>
+        </div>
+        <div class="firstName">
+            <div>Personal Details</div>
+
+            <div class="sub-textNames">
+                <div>First Name & Last Name</div>
+                <input type="text" id="firstNameInput" placeholder="Enter your First Name">
+                <input type="text" id="lastNameInput" placeholder="Enter your Last Name">
+            </div>
+
+            <div class="DateofB">
+                <div>Date of Birth</div>
+                <input type="text" id="dob-box" placeholder="Enter your Date of Birth">
+            </div>
+
+            <div class="EnP">
+                <div>Ethnicity and Pronouns</div>
+                <input type="text" id="eth-input" placeholder="Enter your Ethnicity">
+                <input type="text" id="pro-input" placeholder="Enter your Pronouns">
+            </div>
+
+            <div class="gender">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="">Select Your Gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="non-binary">Non-Binary</option>
+                    <option value="other">Other</option>
+                    <option value="prefer-not-to-answer">Prefer not to Answer</option>
+                </select>
+            </div>
+            <hr class="separator" style="margin-top: 30px; width: 70%; color: grey; align-self: flex-end;" />
+
+            <div class="Contact">
+                <div class="contact-header">Contact Details</div>
+                <div class="displayed">
+                    These details will be displayed on your profile and be visible to potential employers.
+                </div>
+            </div>
+            <div class="email">
+                <div>Email</div>
+                <input type="text" id="emailInput" placeholder="Enter your Email">
+            </div>
+
+            <div class="phone">
+                <div>Phone Number</div>
+                <input type="text" id="phoneInput" placeholder="Enter your Phone Number">
+            </div>
+
+            <div class="loc">
+                <label for="location">Location</label>
+                <select name="Location" id="location">
+                    <option value="Select Location">Select Location</option>
+                    <option value="London">London</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="website">
+                <div>Website</div>
+                <input type="text" id="web" placeholder="Enter your Link Website">
+            </div>
+
+            <div class="yt">
+                <div>Link Youtube</div>
+                <input type="text" id="youtube" placeholder="https://youtube.com/username">
+            </div>
+            
+            <div class="ig">
+                <div>Link Instagram</div>
+                <input type="text" id="insta" placeholder="https://instagram.com/username">
+            </div>
+            <hr class="separator" style="margin-top: 30px; width: 70%; color: grey; align-self: flex-end;" />
+            <button type="button" id="nextButton" class="button1">Next</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            window.location.href = 'page2.html';
+        });
+    </script>
+</body>
+</html>
